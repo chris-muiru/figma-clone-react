@@ -1,4 +1,3 @@
-import React from "react"
 interface UseFigmaInterface {
 	cardImage: string
 	cardHeader: string

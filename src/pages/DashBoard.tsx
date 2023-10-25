@@ -1,4 +1,3 @@
-import React from "react"
 import EducationCard from "../components/EducationCard"
 import SchoolFeatures from "../components/SchoolFeatures"
 import UseFigma from "../components/UseFigma"

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 const Faq = () => {
 	const [toggleIconState, setToggleIconState] = useState<boolean>(false)
