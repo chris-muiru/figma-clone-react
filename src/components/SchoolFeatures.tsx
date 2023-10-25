@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge"
+
 interface SchoolFeatureProps {
 	cardHeader: string
 	cardExt: string
