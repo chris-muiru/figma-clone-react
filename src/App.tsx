@@ -1,6 +1,5 @@
-import React from "react"
-import MenuBar from "./layout/MenuBar"
 import RoutesManagement from "./RoutesManagement"
+import MenuBar from "./layout/MenuBar"
 function App() {
 	return (
 		<div>
