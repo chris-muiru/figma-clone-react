@@ -1,4 +1,4 @@
-import { twJoin } from "tailwind-merge"
+import { twMerge } from "tailwind-merge"
 interface SchoolFeatureProps {
 	cardHeader: string
 	cardExt: string
@@ -18,7 +18,7 @@ const SchoolFeatures = ({
 			<img src={cardImage} alt="" className="my-6" />
 			<div className="space-y-5">
 				<button
-					className={twJoin(
+					className={twMerge(
 						`bg-[#a259ff] font-bold px-3 py-1 rounded-md ${cardExtStyles}`
 					)}
 				>
