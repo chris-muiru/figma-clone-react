@@ -182,9 +182,9 @@ const DashBoard = () => {
 					/>
 				</div>
 			</section>
-			<section className="section py-7 space-y-10 flex flex-col">
-				<div className="space-y-9">
-					<h2 className="font-semibold text-xl">
+			<section className="section py-7 space-y-10 flex flex-col sm:flex-row flex-1 items-center">
+				<div className=" flex-[0.4] flex flex-col gap-10 sm:text-xl">
+					<h2 className="font-semibold ">
 						Bring Figma and FigJam to your entire school district
 					</h2>
 					<p>
@@ -192,12 +192,12 @@ const DashBoard = () => {
 						ideas into reality by bringing Figma and FigJam to Chromebooks
 						in the US—for free.
 					</p>
-					<button className="bg-black text-white px-8 py-2 rounded-xl font-bold">
+					<button className="bg-black text-white px-8 py-2 rounded-xl font-bold sm:w-[13rem]">
 						Learn more
 					</button>
 				</div>
-				<div className="w-9/12 h-9/12 m-auto">
-					<img src="images/hand.webp" alt="" />
+				<div className="flex-[0.6] ">
+					<img src="images/hand.webp" alt="" className="w-[23rem]" />
 				</div>
 			</section>
 
