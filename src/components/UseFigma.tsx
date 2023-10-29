@@ -11,8 +11,10 @@ const UseFigma = ({
 	cardContent,
 }: UseFigmaInterface) => {
 	return (
-		<div className="space-y-6">
-			<img src={cardImage} alt="" />
+		<div className="space-y-6 flex flex-col flex-1">
+			<div className="">
+				<img src={cardImage} alt="" className=""/>
+			</div>
 			<div className="space-y-5">
 				<h2 className="font-bold  text-2xl">{cardHeader}</h2>
 				<p>

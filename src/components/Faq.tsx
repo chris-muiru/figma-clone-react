@@ -3,12 +3,11 @@ import { useState } from "react"
 const Faq = () => {
 	const [toggleIconState, setToggleIconState] = useState<boolean>(false)
 
-	console.log(toggleIconState)
 	const toggleNavIcon = () => {
-		setToggleIconState(!toggleIconState)
+		setToggleIconState((prevState) => !prevState)
 	}
 	return (
-		<div className="py-10 text-xl font-bold">
+		<div className="text-xl font-bold">
 			<div className="flex gap-2 ">
 				<button className="" onClick={toggleNavIcon}>
 					{toggleIconState ? (
@@ -26,14 +25,12 @@ const Faq = () => {
 					)}
 				</button>
 				<div className="relative w-10/12">
-					<p className="absolute -top-1">
-						Who qualifies for the Education plan
-					</p>
+					<p>Who qualifies for the Education plan</p>
 				</div>
 			</div>
-			<div>
+			<div className="text-sm font-normal mt-3">
 				{toggleIconState && (
-					<p>
+					<p className="px-10">
 						Figma offers 2 ways of accessing our tools, depending on the
 						age of your students.
 						<br />

@@ -6,4 +6,7 @@
 	.section {
 		@apply px-5;
 	}
+	.section-sm {
+		@apply px-10;
+	}
 }

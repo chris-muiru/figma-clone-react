@@ -6,68 +6,90 @@ import Faq from "../components/Faq"
 const DashBoard = () => {
 	return (
 		<main className="mt-20">
-			<section className="section">
-				<div className="bg-red-200 w-11/12 m-auto">
-					<img src="images/smily.webp" alt="a smilly face" />
+			<section className="section flex flex-1 flex-col sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm">
+				<div
+					className="m-auto sm:order-2 flex justify-center"
+					style={{ flex: 0.6 }}
+				>
+					<img
+						src="images/smily.webp"
+						alt="a smilly face"
+						className="sm:w-[70%]"
+					/>
 				</div>
-				<p className="font-bold uppercase mt-6">Figma for Education</p>
-				<h2 className="text-4xl font-bold my-6">
-					Free best-in class tools for the classroom
-				</h2>
-				<p className="leading-6 font-medium">
-					Figma and FigJam are design and collaboration software used by
-					professional designers, engineers, and makers of all kinds. Use
-					them to ideate, create, and share work—all free, as a student or
-					teacher.
-				</p>
-				<div className="flex justify-center my-7">
-					<button className="text-white bg-black px-6 py-2 rounded-lg font-bold">
-						Get Verified
-					</button>
+				<div style={{ flex: 0.4 }}>
+					<p className="font-bold uppercase mt-6">Figma for Education</p>
+					<h2 className="text-4xl font-bold my-6 sm:text-5xl sm:leading-snug">
+						Free best-in-class tools for the classroom
+					</h2>
+					<p className="leading-6 font-medium">
+						Figma and FigJam are design and collaboration software used by
+						professional designers, engineers, and makers of all kinds.
+						Use them to ideate, create, and share work—all free, as a
+						student or teacher.
+					</p>
+					<div className="flex justify-center my-7 sm:justify-start">
+						<button className="text-white bg-black px-6 py-2 rounded-lg font-bold">
+							Get Verified
+						</button>
+					</div>
 				</div>
 			</section>
 
-			<section className="bg-[#f0e3ff] section ">
+			<section className="bg-[#f0e3ff] section sm:section-sm">
 				<div className="space-y-10">
-					<h1 className="text-2xl font-semibold py-10">
+					<h1 className="text-2xl font-semibold py-10 sm:text-3xl">
 						Tools for the classroom
 					</h1>
-					<div className="grid grid-cols-1 space-y-10">
-						<div>
-							<img src="images/tools.webp" alt="" />
+					<div className="flex flex-col space-y-10">
+						<div className="flex flex-1 flex-col sm:flex-row gap-10 items-center">
+							<div className="sm:flex-[0.7]">
+								<img
+									src="images/tools.webp"
+									alt=""
+									className="sm:h-[16rem] sm:w-[90%] object-cover"
+								/>
+							</div>
+							<div className="sm:flex-[0.3]">
+								<h2 className="font-bold my-3 text-lg">
+									Explore ideas together with FigJam
+								</h2>
+								<p>
+									FigJam is an online whiteboard where possibilities
+									turn into plans. Teachers can facilitate
+									collaborative group learning while encouraging active
+									participation from students. It’s best suited for
+									classroom discussions, brainstorms, and group work.
+								</p>
+							</div>
 						</div>
-						<div>
-							<h2 className="font-bold my-3 text-md">
-								Explore ideas together with FigJam
-							</h2>
-							<p>
-								FigJam is an online whiteboard where possibilities turn
-								into plans. Teachers can facilitate collaborative group
-								learning while encouraging active participation from
-								students. It’s best suited for classroom discussions,
-								brainstorms, and group work.
-							</p>
-						</div>
-						<div>
-							<img src="images/chess.webp" alt="" />
-						</div>
-						<div className="pb-10">
-							<h2 className="font-bold my-3 text-md">
-								Bring ideas to life with Figma
-							</h2>
-							<p>
-								Figma is a multiplayer, intuitive design tool used by
-								professionals. Create graphics, presentations,
-								prototypes, and more—all with real-time collaboration
-								and feedback. Figma and FigJam live side by side so that
-								students can turn their ideas into reality, faster.
-							</p>
+						<div className="flex flex-1 flex-col sm:flex-row gap-10 items-center">
+							<div className="sm:flex-[0.7]  sm:order-2">
+								<img
+									src="images/chess.webp"
+									alt=""
+									className="sm:h-[16rem] sm:w-[90%] object-cover"
+								/>
+							</div>
+							<div className="sm:flex-[0.3] sm:order-1">
+								<h2 className="font-bold my-3 text-md">
+									Bring ideas to life with Figma
+								</h2>
+								<p>
+									Figma is a multiplayer, intuitive design tool used by
+									professionals. Create graphics, presentations,
+									prototypes, and more—all with real-time collaboration
+									and feedback. Figma and FigJam live side by side so
+									that students can turn their ideas into reality,
+									faster.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className="section mt-10">
-				<div>
+			<section className="section mt-10 sm:section-sm">
+				<div className="sm:w-2/3 sm:text-lg">
 					<h2 className="font-bold  text-2xl">Bring learning to life</h2>
 					<p className="my-5">
 						Use industry-leading design tools to create a collaborative
@@ -75,36 +97,38 @@ const DashBoard = () => {
 						classroom.
 					</p>
 				</div>
-				<EducationCard
-					cardContent="Get students excited about learning by empowering them
+				<div className="flex flex-col sm:flex-row gap-10">
+					<EducationCard
+						cardContent="Get students excited about learning by empowering them
                 to imagine and design together—all in a fun, interactive
                 space."
-					cardHeader="K-12 educators"
-					cardImage="images/draw.webp"
-					urlToLearnMore=""
-				/>
-				<EducationCard
-					cardContent="Get students excited about learning by empowering them
+						cardHeader="K-12 educators"
+						cardImage="images/draw.webp"
+						urlToLearnMore=""
+					/>
+					<EducationCard
+						cardContent="Get students excited about learning by empowering them
                 to imagine and design together—all in a fun, interactive
                 space."
-					cardHeader="K-12 educators"
-					cardImage="images/draw.webp"
-					urlToLearnMore=""
-				/>
-				<EducationCard
-					cardContent="Get students excited about learning by empowering them
+						cardHeader="Higher Education Faculty"
+						cardImage="images/draw.webp"
+						urlToLearnMore=""
+					/>
+					<EducationCard
+						cardContent="Get students excited about learning by empowering them
                 to imagine and design together—all in a fun, interactive
                 space."
-					cardHeader="Student"
-					cardImage="images/shadow.webp"
-					urlToLearnMore=""
-				/>
+						cardHeader="Student"
+						cardImage="images/shadow.webp"
+						urlToLearnMore=""
+					/>
+				</div>
 			</section>
-			<section className="bg-[#f5f5f5] section py-6">
+			<section className="bg-[#f5f5f5] section py-6 sm:section-sm">
 				<h2 className="text-2xl font-semibold py-10">
 					New-school features from every grade level
 				</h2>
-				<div className="grid grid-cols-1">
+				<div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
 					<SchoolFeatures
 						cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
 						cardExt="FIGJAM"
@@ -137,7 +161,7 @@ const DashBoard = () => {
 				<h2 className="font-bold my-3 text-2xl px-14 py-2">
 					Start using Figma with your class
 				</h2>
-				<div>
+				<div className="flex flex-col sm:flex-row gap-10">
 					<UseFigma
 						cardContent="Use your student or teacher email address to sign up for Figma"
 						cardHeader="1. Create an account"
@@ -182,12 +206,10 @@ const DashBoard = () => {
 					Education plan FAQ
 				</h2>
 
-				<div className="flex flex-col">
+				<div className="flex flex-col gap-y-5 mt-3">
 					<Faq />
 					<hr />
 					<Faq />
-					<hr />
-					<hr />
 					<hr />
 					<Faq />
 					<hr />
@@ -207,9 +229,7 @@ const DashBoard = () => {
 					</button>
 				</div>
 			</section>
-			<footer>
-				
-			</footer>
+			<footer></footer>
 		</main>
 	)
 }

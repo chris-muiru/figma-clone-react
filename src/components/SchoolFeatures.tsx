@@ -15,12 +15,18 @@ const SchoolFeatures = ({
 	cardImage,
 }: SchoolFeatureProps) => {
 	return (
-		<div>
-			<img src={cardImage} alt="" className="my-6" />
+		<div className="flex flex-col">
+			<div className="">
+				<img
+					src={cardImage}
+					alt=""
+					className="sm:h-[15rem] sm:w-full object-cover"
+				/>
+			</div>
 			<div className="space-y-5">
 				<button
 					className={twMerge(
-						`bg-[#a259ff] font-bold px-3 py-1 rounded-md ${cardExtStyles}`
+						`bg-[#a259ff] font-bold px-3 py-2 my-2 rounded-md ${cardExtStyles}`
 					)}
 				>
 					{cardExt}
