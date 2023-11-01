@@ -202,7 +202,7 @@ const DashBoard = () => {
 			</section>
 
 			<section className="section bg-black text-white py-10">
-				<h2 className="text-center text-2xl font-semibold sm:my-8 sm:text-4xl">
+				<h2 className="text-center text-2xl font-semibold sm:my-8 sm:text-3xl">
 					Education plan FAQ
 				</h2>
 
