@@ -13,23 +13,21 @@ import figmaShadow from "@/assets/images/shadow.webp"
 
 const DashBoard = () => {
 	return (
-		<main className="mt-20">
-			<section className="section flex flex-1 flex-col sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm">
-				<div
-					className="m-auto sm:order-2 flex justify-center"
-					style={{ flex: 0.6 }}
-				>
+		<main className="mt-20 xl:mt-0">
+			<section className="flex flex-1 flex-col sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm xl:mx-[16rem] xl:mb-[19rem] xl:p-16">
+				<div className="flex-[0.6] m-auto sm:order-2 flex justify-center">
 					<img
 						src={smilly}
-						alt="a smilly face"
-						className="sm:w-[70%]"
+						alt="a smily face"
+						className="sm:w-[70%] xl:w-[33rem]"
 					/>
 				</div>
-				<div style={{ flex: 0.4 }}>
+
+				<div className="flex-[0.4] xl:self-center">
 					<p className="font-bold uppercase mt-6">
 						Figma for Education
 					</p>
-					<h2 className="text-4xl font-bold my-6 sm:text-5xl sm:leading-snug">
+					<h2 className="text-4xl font-bold my-6 sm:text-5xl sm:leading-snug xl:text-6xl">
 						Free best-in-class tools for the classroom
 					</h2>
 					<p className="leading-6 font-medium">
