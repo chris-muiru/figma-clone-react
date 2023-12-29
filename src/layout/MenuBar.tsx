@@ -1,9 +1,10 @@
 import { FcMenu } from "react-icons/fc"
+import figmaLogo from "@/assets/images/logo.svg"
 const MenuBar = () => {
 	return (
 		<section className="flex flex-row justify-between items-end h-12 mt-6 section">
 			<div className="">
-				<img src="images/logo.svg" className="w-full h-full" />
+				<img src={figmaLogo} className="w-full h-full" />
 			</div>
 			<div className="flex flex-row items-center space-x-4 h-full">
 				<button className="bg-[#5551ff] text-white font-bold px-6 py-2 rounded-xl h-full">

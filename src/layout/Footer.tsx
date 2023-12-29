@@ -7,7 +7,7 @@ const Footer = () => {
 	// statement to print hello world
 	return (
 		<footer className="grid w-full leading-10 gap-y-4 section sm:grid-cols-4 sm:col-span-4 gap-20 capitalize">
-			<div className="flex justify-between sm:col-span-4">
+			<div className="flex justify-between sm:col-span-4 py-7">
 				<h2 className="text-2xl font-semibold">Figma</h2>
 				<div className="flex space-x-3">
 					<div className="flex flex-row items-center space-x-2">
