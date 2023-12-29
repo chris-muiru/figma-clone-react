@@ -1,6 +1,5 @@
 import { FcMenu } from "react-icons/fc"
 import figmaLogo from "@/assets/images/logo.svg"
-import arrowDown from "@/assets/images/arrowDown.svg"
 import { TiArrowSortedDown } from "react-icons/ti"
 const MenuBar = () => {
 	const menuLinks: string[] = [

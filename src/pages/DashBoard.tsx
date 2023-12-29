@@ -45,24 +45,24 @@ const DashBoard = () => {
 			</section>
 
 			<section className="bg-[#f0e3ff] section sm:section-sm">
-				<div className="space-y-10">
-					<h1 className="text-2xl font-semibold py-10 sm:text-3xl">
+				<div className="space-y-10 xl:mx-[20rem] xl:p-10">
+					<h1 className="text-2xl font-semibold py-20 sm:text-3xl xl:text-4xl">
 						Tools for the classroom
 					</h1>
-					<div className="flex flex-col space-y-10">
+					<div className="flex flex-col space-y-10 gap-20">
 						<div className="flex flex-1 flex-col sm:flex-row gap-10 items-center">
 							<div className="sm:flex-[0.7]">
 								<img
 									src={figmaTools}
 									alt=""
-									className="sm:h-[16rem] sm:w-[90%] object-cover"
+									className="sm:h-[16rem] sm:w-[90%] object-cover xl:h-[35rem]"
 								/>
 							</div>
 							<div className="sm:flex-[0.3]">
-								<h2 className="font-bold my-3 text-lg">
+								<h2 className="font-bold my-3 text-lg xl:text-2xl">
 									Explore ideas together with FigJam
 								</h2>
-								<p>
+								<p className="xl:text-lg">
 									FigJam is an online whiteboard where
 									possibilities turn into plans. Teachers can
 									facilitate collaborative group learning
@@ -77,14 +77,14 @@ const DashBoard = () => {
 								<img
 									src={figmaChess}
 									alt=""
-									className="sm:h-[16rem] sm:w-[90%] object-cover"
+									className="sm:h-[16rem] sm:w-[90%] object-cover xl:h-[30rem] "
 								/>
 							</div>
 							<div className="sm:flex-[0.3] sm:order-1">
-								<h2 className="font-bold my-3 text-md">
+								<h2 className="font-bold my-3 text-md  xl:text-2xl">
 									Bring ideas to life with Figma
 								</h2>
-								<p>
+								<p className="xl:text-lg">
 									Figma is a multiplayer, intuitive design
 									tool used by professionals. Create graphics,
 									presentations, prototypes, and more—all with
