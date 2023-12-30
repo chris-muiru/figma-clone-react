@@ -14,7 +14,7 @@ import figmaShadow from "@/assets/images/shadow.webp"
 const DashBoard = () => {
 	return (
 		<main className="mt-20 xl:mt-0">
-			<section className="flex flex-1 flex-col sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm xl:mx-[16rem] xl:mb-[19rem] xl:p-16">
+			<section className="flex flex-1 flex-col section sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm xl:section-lg xl:p-16">
 				<div className="flex-[0.6] m-auto sm:order-2 flex justify-center">
 					<img
 						src={smilly}
@@ -44,8 +44,8 @@ const DashBoard = () => {
 				</div>
 			</section>
 
-			<section className="bg-[#f0e3ff] section sm:section-sm">
-				<div className="space-y-10 xl:mx-[20rem] xl:p-10">
+			<section className="bg-[#f0e3ff] section sm:section-sm ">
+				<div className="space-y-10 xl:section-lg">
 					<h1 className="text-2xl font-semibold py-20 sm:text-3xl xl:text-4xl">
 						Tools for the classroom
 					</h1>
@@ -98,7 +98,7 @@ const DashBoard = () => {
 					</div>
 				</div>
 			</section>
-			<section className="section mt-10 sm:section-sm">
+			<section className="section mt-10 sm:section-sm xl:section-lg">
 				<div className="sm:w-2/3 sm:text-lg">
 					<h2 className="font-bold  text-2xl">
 						Bring learning to life
@@ -137,64 +137,68 @@ const DashBoard = () => {
 				</div>
 			</section>
 			<section className="bg-[#f5f5f5] section py-6 sm:section-sm">
-				<h2 className="text-2xl font-semibold py-10">
-					New-school features from every grade level
-				</h2>
-				<div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-					<SchoolFeatures
-						cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
-						cardExt="FIGJAM"
-						cardHeader="Level up lessons"
-						cardImage={figmaDraw}
-					/>
-					<SchoolFeatures
-						cardContent="Encourage a new way for students to collaborate in real time with audio chat, cursor chat, voting, and comments."
-						cardExt="FIGJAM"
-						cardHeader="Share with the class"
-						cardImage={figmaTools}
-					/>
-					<SchoolFeatures
-						cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
-						cardExt="FIGJAM"
-						cardExtStyles="bg-[#ff7575]"
-						cardHeader="Level up lessons"
-						cardImage={figmaShadow}
-					/>
-					<SchoolFeatures
-						cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
-						cardExt="FIGJAM"
-						cardExtStyles="bg-[#ff7575]"
-						cardHeader="Learn from the pros"
-						cardImage={figmaShadow}
-					/>
-				</div>
+				<section className="xl:section-lg">
+					<h2 className="text-2xl font-semibold py-10">
+						New-school features from every grade level
+					</h2>
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+						<SchoolFeatures
+							cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
+							cardExt="FIGJAM"
+							cardHeader="Level up lessons"
+							cardImage={figmaDraw}
+						/>
+						<SchoolFeatures
+							cardContent="Encourage a new way for students to collaborate in real time with audio chat, cursor chat, voting, and comments."
+							cardExt="FIGJAM"
+							cardHeader="Share with the class"
+							cardImage={figmaTools}
+						/>
+						<SchoolFeatures
+							cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
+							cardExt="FIGJAM"
+							cardExtStyles="bg-[#ff7575]"
+							cardHeader="Level up lessons"
+							cardImage={figmaShadow}
+						/>
+						<SchoolFeatures
+							cardContent="Brainstorm group ideas with your class using sticky notes, stamps, images, videos, and more."
+							cardExt="FIGJAM"
+							cardExtStyles="bg-[#ff7575]"
+							cardHeader="Learn from the pros"
+							cardImage={figmaShadow}
+						/>
+					</div>
+				</section>
 			</section>
 			<section className="bg-[#F0E3FF] section py-6">
-				<h2 className="font-bold my-3 text-2xl px-14 py-2">
-					Start using Figma with your class
-				</h2>
-				<div className="flex flex-col sm:flex-row gap-10">
-					<UseFigma
-						cardContent="Use your student or teacher email address to sign up for Figma"
-						cardHeader="1. Create an account"
-						cardImage={figmaWow}
-						cardLink=""
-					/>
-					<UseFigma
-						cardContent="Once you’ve created your Figma account, verify that you are a student or educator by clickin"
-						cardHeader="2. Get verified"
-						cardImage={figmaWow}
-						cardLink=""
-					/>
-					<UseFigma
-						cardContent="Create, upgrade, or join an existing team to start collaborating and get access to all professional paid tools."
-						cardHeader="3. Create an account"
-						cardImage={figmaWow}
-						cardLink=""
-					/>
-				</div>
+				<section className="xl:section-lg">
+					<h2 className="font-bold my-3 text-2xl px-14 py-2">
+						Start using Figma with your class
+					</h2>
+					<div className="flex flex-col sm:flex-row gap-10">
+						<UseFigma
+							cardContent="Use your student or teacher email address to sign up for Figma"
+							cardHeader="1. Create an account"
+							cardImage={figmaWow}
+							cardLink=""
+						/>
+						<UseFigma
+							cardContent="Once you’ve created your Figma account, verify that you are a student or educator by clickin"
+							cardHeader="2. Get verified"
+							cardImage={figmaWow}
+							cardLink=""
+						/>
+						<UseFigma
+							cardContent="Create, upgrade, or join an existing team to start collaborating and get access to all professional paid tools."
+							cardHeader="3. Create an account"
+							cardImage={figmaWow}
+							cardLink=""
+						/>
+					</div>
+				</section>
 			</section>
-			<section className="section py-7 space-y-10 flex flex-col sm:flex-row flex-1 items-center">
+			<section className="section py-7 space-y-10 flex flex-col sm:flex-row flex-1 items-center xl:section-lg">
 				<div className=" flex-[0.4] flex flex-col gap-10 sm:text-xl">
 					<h2 className="font-semibold ">
 						Bring Figma and FigJam to your entire school district
@@ -214,21 +218,23 @@ const DashBoard = () => {
 			</section>
 
 			<section className="section bg-black text-white py-10">
-				<h2 className="text-center text-2xl font-semibold sm:my-8 sm:text-3xl">
-					Education plan FAQ
-				</h2>
+				<section className="xl:section-lg">
+					<h2 className="text-center text-2xl font-semibold sm:my-8 sm:text-3xl">
+						Education plan FAQ
+					</h2>
 
-				<div className="flex flex-col gap-y-5 mt-3">
-					<Faq />
-					<hr />
-					<Faq />
-					<hr />
-					<Faq />
-					<hr />
-					<Faq />
-					<hr />
-					<Faq />
-				</div>
+					<div className="flex flex-col gap-y-5 mt-3">
+						<Faq />
+						<hr />
+						<Faq />
+						<hr />
+						<Faq />
+						<hr />
+						<Faq />
+						<hr />
+						<Faq />
+					</div>
+				</section>
 			</section>
 			<section className="section bg-[#F5F5F5] ">
 				<div className=" flex flex-col items-center py-10 space-y-6 mx-6">
@@ -241,7 +247,6 @@ const DashBoard = () => {
 					</button>
 				</div>
 			</section>
-			<footer></footer>
 		</main>
 	)
 }
