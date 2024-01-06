@@ -1,20 +1,20 @@
 import EducationCard from "../components/EducationCard"
+import Faq from "../components/Faq"
 import SchoolFeatures from "../components/SchoolFeatures"
 import UseFigma from "../components/UseFigma"
-import Faq from "../components/Faq"
 
-import smilly from "@/assets/images/smily.webp"
-import figmaTools from "@/assets/images/tools.webp"
-import figmaHand from "@/assets/images/hand.webp"
 import figmaChess from "@/assets/images/chess.webp"
 import figmaDraw from "@/assets/images/draw.webp"
-import figmaWow from "@/assets/images/wow.webp"
+import figmaHand from "@/assets/images/hand.webp"
 import figmaShadow from "@/assets/images/shadow.webp"
+import smilly from "@/assets/images/smily.webp"
+import figmaTools from "@/assets/images/tools.webp"
+import figmaWow from "@/assets/images/wow.webp"
 
 const DashBoard = () => {
 	return (
 		<main className="mt-20 xl:mt-0">
-			<section className="flex flex-1 flex-col section sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm xl:section-lg xl:p-16">
+			<section className="flex flex-1 flex-col section sm:flex-row sm:gap-10 sm:items-baseline sm:section-sm xl:section-xl xl:p-16">
 				<div className="flex-[0.6] m-auto sm:order-2 flex justify-center">
 					<img
 						src={smilly}
@@ -45,7 +45,7 @@ const DashBoard = () => {
 			</section>
 
 			<section className="bg-[#f0e3ff] section sm:section-sm ">
-				<div className="space-y-10 xl:section-lg">
+				<div className="space-y-10 xl:section-xl">
 					<h1 className="text-2xl font-semibold py-20 sm:text-3xl xl:text-4xl">
 						Tools for the classroom
 					</h1>
@@ -98,7 +98,7 @@ const DashBoard = () => {
 					</div>
 				</div>
 			</section>
-			<section className="section mt-10 sm:section-sm xl:section-lg">
+			<section className="section mt-10 sm:section-sm xl:section-xl">
 				<div className="sm:w-2/3 sm:text-lg">
 					<h2 className="font-bold  text-2xl">
 						Bring learning to life
@@ -137,7 +137,7 @@ const DashBoard = () => {
 				</div>
 			</section>
 			<section className="bg-[#f5f5f5] section py-6 sm:section-sm">
-				<section className="xl:section-lg">
+				<section className="xl:section-xl">
 					<h2 className="text-2xl font-semibold py-10">
 						New-school features from every grade level
 					</h2>
@@ -172,7 +172,7 @@ const DashBoard = () => {
 				</section>
 			</section>
 			<section className="bg-[#F0E3FF] section py-6">
-				<section className="xl:section-lg">
+				<section className="xl:section-xl">
 					<h2 className="font-bold my-3 text-2xl px-14 py-2">
 						Start using Figma with your class
 					</h2>
@@ -198,7 +198,7 @@ const DashBoard = () => {
 					</div>
 				</section>
 			</section>
-			<section className="section py-7 space-y-10 flex flex-col sm:flex-row flex-1 items-center xl:section-lg">
+			<section className="section py-7 space-y-10 flex flex-col sm:flex-row flex-1 items-center xl:section-xl">
 				<div className=" flex-[0.4] flex flex-col gap-10 sm:text-xl">
 					<h2 className="font-semibold ">
 						Bring Figma and FigJam to your entire school district
@@ -218,7 +218,7 @@ const DashBoard = () => {
 			</section>
 
 			<section className="section bg-black text-white py-10">
-				<section className="xl:section-lg">
+				<section className="xl:section-xl">
 					<h2 className="text-center text-2xl font-semibold sm:my-8 sm:text-3xl">
 						Education plan FAQ
 					</h2>

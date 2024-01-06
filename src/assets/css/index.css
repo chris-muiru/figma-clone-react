@@ -14,7 +14,7 @@
 	.section-sm {
 		@apply px-10;
 	}
-	.section-lg {
+	.section-xl {
 		margin: 0 16rem 10rem;
 	}
 }
