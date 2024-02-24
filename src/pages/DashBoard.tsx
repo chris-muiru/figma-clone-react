@@ -1,8 +1,3 @@
-import EducationCard from "../components/EducationCard"
-import Faq from "../components/Faq"
-import SchoolFeatures from "../components/SchoolFeatures"
-import UseFigma from "../components/UseFigma"
-
 import figmaChess from "@/assets/images/chess.webp"
 import figmaDraw from "@/assets/images/draw.webp"
 import figmaHand from "@/assets/images/hand.webp"
@@ -10,6 +5,10 @@ import figmaShadow from "@/assets/images/shadow.webp"
 import smilly from "@/assets/images/smily.webp"
 import figmaTools from "@/assets/images/tools.webp"
 import figmaWow from "@/assets/images/wow.webp"
+import EducationCard from "@/components/EducationCard"
+import Faq from "@/components/Faq"
+import SchoolFeatures from "@/components/SchoolFeatures"
+import UseFigma from "@/components/UseFigma"
 
 const DashBoard = () => {
 	return (
