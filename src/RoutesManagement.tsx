@@ -1,5 +1,5 @@
+import DashBoard from "@/pages/DashBoard"
 import { Route, Routes } from "react-router-dom"
-import DashBoard from "./pages/DashBoard"
 
 const RoutesManagement = () => {
 	return (

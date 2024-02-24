@@ -18,9 +18,9 @@ const MenuBar = () => {
 			<div className="flex flex-row items-center space-x-4 h-full">
 				{/* For large screens */}
 				<div className="hidden xl:flex xl:space-x-6">
-					{menuLinks.map((link) => {
+					{menuLinks.map((link, key) => {
 						return (
-							<div className="flex items-center">
+							<div className="flex items-center" key={key}>
 								<h2>{link}</h2>
 								<TiArrowSortedDown />
 							</div>

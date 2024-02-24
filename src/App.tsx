@@ -1,7 +1,7 @@
+import RoutesManagement from "@/RoutesManagement"
+import Footer from "@/layout/Footer"
+import MenuBar from "@/layout/MenuBar"
 import { createGlobalStyle } from "styled-components"
-import RoutesManagement from "./RoutesManagement"
-import Footer from "./layout/Footer"
-import MenuBar from "./layout/MenuBar"
 // styled component
 const GlobalDiv = createGlobalStyle`
 	body{
